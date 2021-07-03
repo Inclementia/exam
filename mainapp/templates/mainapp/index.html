@@ -1,6 +1,7 @@
 {% extends 'mainapp/base.html' %}
-
 {% block content %}
-    <h1>Студенты</h1>
-
+<h1>Случайный студент</h1>
+{% for item in name %}
+{{ item }}
+{% endfor %}
 {% endblock %}
