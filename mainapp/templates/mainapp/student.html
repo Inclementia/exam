@@ -1,0 +1,15 @@
+{% extends 'mainapp/base.html' %}
+
+{% block content %}
+    <h2>Список студентов</h2>
+    <div class="student-menu">
+        <ol>
+        {%  for item in students  %}
+            <li>
+                    {{ item }}
+            </li>
+        {% endfor %}
+        </ol>
+    </div>
+
+{% endblock %}
